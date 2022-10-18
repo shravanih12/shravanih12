@@ -1,0 +1,1 @@
+/*WAP to input storage capacity in gigabytes and convert to megabytes bytes and bits*/
