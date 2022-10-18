@@ -27,24 +27,24 @@ void main()
 	scanf("%s",&place);
 	printf("\n Enter health status (excellent/poor)= ");
 	scanf("%s",&health_status);
-	printf("\n Enter plicy amount= ");
+	printf("\n Enter policy amount= ");
 	scanf("%f",&policy_amt);
 	
-	if(strcmp(gender,"male")==0 && 25<age<45 && strcmp(place,"city")==0 && strcmp(health_status,"excellent")==0 && policy_amt > 200000)
+	if(strcmp(gender,"male")==0 && 25<age && age < 45 && strcmp(place,"city")==0 && strcmp(health_status,"excellent")==0 && policy_amt > 200000)
 	{
 		printf("\n premium amount = %f",policy_amt*6/1000);
 	}
-	else if(strcmp(gender,"female")==0 && 25<age<45 && strcmp(place,"city")==0 && strcmp(health_status,"excellent")==0 && policy_amt > 100000)
+	else if(strcmp(gender,"female")==0 && 25<age && age < 45 && strcmp(place,"city")==0 && strcmp(health_status,"excellent")==0 && 100000 < policy_amt <200000 )
 	{
 		printf("\n premium amount = %f",policy_amt*3/1000);
 	}
-	else if(strcmp(gender,"male")==0 && 25<age<45 && strcmp(place,"village")==0 && strcmp(health_status,"poor")==0 && policy_amt > 10000)
+	else if(strcmp(gender,"male")==0 && 25<age && age < 45 && strcmp(place,"village")==0 && strcmp(health_status,"poor")==0 && policy_amt > 10000)
 	{
 		printf("\n premium amount = %f",policy_amt*6/1000);
 	}
 	else
 	{
-		printf("\n person is not applicable for the policy");
+		printf("\n Person is not applicable for the policy");
 	}
 	
 	
