@@ -2,32 +2,21 @@
 #include <stdio.h>  
 void main ()  
 {   
-    int arr[20], i, j, k, n;  
-      
-    printf ("\n Define the number of elements in an array: ");  
-    scanf (" %d", &n);  
-      
-    printf (" \n Enter %d elements of an array: ", n);  
-    for ( i = 0; i < size; i++)  
-    {  
-        scanf (" %d", &arr[i]);  
-    }  
-       
-    for ( i = 0; i < size; i ++)  
-    {  
-        for ( j = i + 1; j < size; j++)  
-        {    
-            if ( arr[i] == arr[j])  
-            {  
-                     count++;
-            }  
-        }  
-    }  
+    int x[5]={1 , 2 , 3 , 3 ,5 };
+    int y[5]={-1 , -1 , -1 , -1 , -1 };
+    int i,j;
     
-    if(count>1);
+    for(i=0;i<5;i++)
     {
-    	
+    	for(j=0;j<5;j++)
+    	{
+    		if(y[i]!=x[j])
+    	      y[i]=x[j];
+		}
 	}
-         
+    for(i=0;i<5;i++)
+    {
+    	printf("%d",y[i]);
+	}
     
 } 
